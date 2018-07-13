@@ -1,0 +1,20 @@
+.container-lion {
+    z-index: 1;
+}
+.container-overlay {
+    .overlay {
+        z-index: 2;
+    }
+}
+.prj-txt-bg {
+    z-index: 3;
+}
+.prj_wrapper {
+    z-index: 4;
+}
+.slide-control {
+    z-index: 5;
+}
+.mobile-notification {
+    z-index: 9999;
+}

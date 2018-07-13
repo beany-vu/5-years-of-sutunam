@@ -1,0 +1,100 @@
+//project background txt
+.prj-txt-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    contain: strict;
+    visibility: visible;
+    &.disabled {
+        visibility: hidden;
+    }
+    div[class^='txt-'] {
+        position: fixed;
+        top: 40%;
+        left: 10%;
+    }
+    div[class^='txt-'] p {
+        position: relative;
+        overflow: hidden;
+        will-change: width;
+    }
+    div[class^='txt-'] p .text-cover {
+        position: absolute;
+        content: "";
+        top: 15%;
+        right: 0;
+        bottom: 10%;
+        left: 0;
+        transform: translateX(-101%);
+    }
+}
+
+#txt-cresus {
+    .text-brand {
+        color: rgba(254, 255, 255, 0.11);
+    }
+    .text-cover {
+        background: #EE5688;
+    }
+}
+
+#txt-durance {
+    .text-brand {
+        color: rgba(254, 255, 255, 0.11);
+    }
+    .text-cover {
+        background: #AB39DB;
+    }
+}
+
+#txt-bys {
+    .text-brand {
+        color: rgba(254, 255, 255, 0.11);
+    }
+    .text-cover {
+        background: #157C80;;
+    }
+}
+
+#txt-club75 {
+    .text-brand {
+        color: rgba(254, 255, 255, 0.11);
+    }
+    .text-cover {
+        background: #A90806;
+    }
+}
+
+#txt-renault {
+    .text-brand {
+        color: rgba(254, 255, 255, 0.11);
+    }
+    .text-cover {
+        background: #221f26;
+    }
+}
+
+.prj-txt-bg div[class^='txt-'] .text-brand {
+    display: inline-block;
+    margin: 0;
+    font-size: 12.5vw;
+    font-family: 'gotham-black';
+    letter-spacing: 0.2em;
+    line-height: 100%;
+    overflow: hidden;
+    opacity: 0;
+    white-space: nowrap;
+}
+@include bp(max-width, $screen-lg-max) {
+    .prj-txt-bg {
+        div[class^='txt-'] {
+            p {
+                .text-cover {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

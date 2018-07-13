@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#e9551b">
+    <meta name="msapplication-navbutton-color" content="#e9551b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+
+    <title>Open Source Expert: Magento & Web Design Projects - Sutunam</title>
+    <meta name="description" content="5 Years with Sutunam: eCommerce Magento Development, Mobile Application and Web Design. Presentation of our 5 great successes from 2015.">
+
+    <!-- Open Graph metas-->
+    <meta property="og:title" content="5 years with Sutunam - 5 projects with Sutunam"/>
+    <meta property="og:image" content="http://5years.sutunam.com/images/fb_five_years_sutunam.png"/> <!-- recommended size: 1200 x 630 pixels, minimum size 600 x 315-->
+    <meta property="og:image:width" content="1096"/>
+    <meta property="og:image:height" content="683" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="5 years Sutunam"/>
+    <meta property="og:description" content="5 years with Sutunam, Digital agency & Magento Website Design Company. Flashback over 5 projects of great successes, awesome teams and love !" /> <!-- max 250 characters -->
+
+    <!--Twitter card metas-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="5 years Sutunam" />
+    <meta name="twitter:description" content="5 years with Sutunam, Digital agency & Magento Website Design Company. Flashback over 5 projects of great successes, awesome teams and love !" /> <!-- max 200 characters -->
+    <meta name="twitter:title" content="5 years with Sutunam - 5 projects with Sutunam" />
+
+    <style>
+        /*style for critical rending path - don't move it to .css file*/
+        .full-screen {
+            contain: strict;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .container-lion {
+            opacity: 0;
+        }
+
+        .background-lion {
+            background: #e9551b url(images/home/background_lion_gradient.png) no-repeat;
+            background-size: cover;
+        }
+
+        .lion {
+            contain: strict;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #container-triangle {
+            opacity: 0;
+        }
+
+        .triangle {
+            position: fixed;
+        }
+
+        .triangle1 {
+            contain: strict;
+            background: url(images/home/triangle/triangle01.svg) no-repeat;
+            background-size: 100%;
+            width: 746px;
+            height: 595px;
+            left: -100px;
+            bottom: -100px;
+        }
+
+        .triangle2 {
+            contain: strict;
+            background: url(images/home/triangle/triangle02.svg) no-repeat;
+            background-size: 100%;
+            width: 261px;
+            height: 128px;
+            left: 35%;
+            bottom: -10%;
+        }
+
+        .triangle3 {
+            contain: strict;
+            background: url(images/home/triangle/triangle03.svg) no-repeat;
+            background-size: 100%;
+            width: 315px;
+            height: 251px;
+            right: 350px;
+            bottom: 50px;
+        }
+
+        .triangle4 {
+            contain: strict;
+            background: url(images/home/triangle/triangle04.svg) no-repeat;
+            background-size: 100%;
+            width: 39px;
+            height: 66px;
+            left: 20%;
+            top: 20%;
+        }
+
+        .triangle5 {
+            contain: strict;
+            background: url(images/home/triangle/triangle05.svg) no-repeat;
+            background-size: 100%;
+            width: 21px;
+            height: 24px;
+            left: 80%;
+            top: 20%;
+        }
+
+        .triangle6 {
+            contain: strict;
+            background: url(images/home/triangle/triangle06.svg) no-repeat;
+            background-size: 100%;
+            width: 182px;
+            height: 155px;
+            top: -10%;
+            left: 75%;
+        }
+        @media (min-width: 1200px) {
+            .container-lion,
+            .triangle,
+            .lion {
+                transform: translateZ(0);
+                backface-visibility: hidden;
+            }
+            .triangle,
+            .lion {
+                will-change: transform;
+            }
+            .container-lion {
+                will-change: opacity;
+            }
+
+        }
+        @media (max-width: 1600px) {
+            .triangle {
+                background-size: 50%;
+                background-position: left;
+            }
+        }
+
+    </style>
+    <!--<link rel="stylesheet" href="css/_bower.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Analytics tracking code -->
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-22497715-1']);
+        _gaq.push(['_setDomainName', 'sutunam.com']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+<div class="home" id="home-page" data-xthreshold="500" data-ythreshold="500">
+    <div id="background">
+        <div id="background-lion" class="background-lion full-screen"></div>
+        <div id="background-illustration" class="background-illustration full-screen"></div>
+    </div>
+    <div id="container-lion" class="container container-lion full-screen"></div><!-- end .container-lion-->
+    <div id="container-illustration" class="container-illustration full-screen">
+          <div id="illustration" class="illustration full-screen"></div>
+    </div>
+    <div id="container-triangle" class="container container-triangle full-screen">
+        <div id="triangle1" class="triangle triangle1 hide-on-tablet"></div>
+        <div id="triangle2" class="triangle triangle2 hide-on-tablet"></div>
+        <div id="triangle3" class="triangle triangle3 hide-on-tablet"></div>
+        <div id="triangle4" class="triangle triangle4 hide-on-tablet"></div>
+        <div id="triangle5" class="triangle triangle5 hide-on-tablet"></div>
+        <div id="triangle6" class="triangle triangle6 hide-on-tablet"></div>
+    </div>
+    <div id="container-overlay" class="container-overlay hide-on-tablet">
+        <div id="overlay-lion" class="overlay overlay-lion"></div>
+    </div>
+    <div class="container-heading">
+        <h1 id="heading-lion" class="heading-lion">
+                <span id="heading" class="heading">
+                    <span id="txt1" class="txt txt-fixed">5</span>
+                    <span id="txt2-wrapper" class="txt-dynamic">
+                        <span id="txt2" class="txt-word txt-word1">years</span>
+                        <span id="txt3" class="txt-word txt-word2">projects</span>
+                    </span>
+                </span>
+            <span id="heading-txt-small" class="txt-small">WITH <span id="heading-txt-boldsmall" class="txt-bold">SUTUNAM</span></span>
+        </h1>
+    </div><!--end .container-heading-->
+    <div class="prj-txt-bg disabled" id="prj-txt-bg">
+        <div class="txt-bg txt-cresus" id="txt-cresus" data-slide="1"><p><span class="text-brand">CRESUS</span><span class="text-cover"></span></p></div>
+        <div class="txt-bg txt-durance" id="txt-durance" data-slide="2"><p><span class="text-brand">DURANCE</span><span class="text-cover"></span></p></div>
+        <div class="txt-bg txt-bys" id="txt-bys" data-slide="3"><p><span class="text-brand">BYS</span><span class="text-cover"></span></p></div>
+        <div class="txt-bg txt-club75" id="txt-club75" data-slide="4"><p><span class="text-brand">CLUB 75</span><span class="text-cover"></span></p></div>
+        <div class="txt-bg txt-renault" id="txt-renault" data-slide="5"><p><span class="text-brand">RENAULT</span><span class="text-cover"></span></p></div>
+    </div><!--end .prj-txt-bg-->
+      <div class="prj_wrapper" id="prj-info-wrapper">
+        <div id="prj1" class="prj prj1 prj-cresus">
+            <div id="prj1_desc" class="prj_desc">
+                <p class="animated prj_info">ECOMMERCE X MAGENTO</p>
+            </div>
+
+            <div class="prj_detail">
+                <a class="animated prj_info" href="https://www.cresus.fr/" target="_blank">
+                    <span class="btn btn-more">See</span>
+                </a>
+            </div>
+        </div>
+        <div id="prj2" class="prj prj2 prj-durance">
+            <div class="prj_desc">
+                <p class="animated prj_info">ECOMMERCE X MAGENTO</p>
+            </div>
+
+            <div class="prj_detail">
+                <a class="animated prj_info" href="https://www.durance.fr/" target="_blank">
+                    <span class="btn btn-more">See</span>
+                </a>
+            </div>
+        </div>
+        <div id="prj3" class="prj prj3 prj-bys">
+            <div class="prj_desc">
+                <p class="animated prj_info">ECOMMERCE X MAGENTO</p>
+            </div>
+
+            <div class="prj_detail">
+                <a class="animated prj_info" href="http://www.bysmaquillage.fr/">
+                    <span class="btn btn-more">See</span>
+                </a>
+            </div>
+        </div>
+        <div id="prj4" class="prj prj4 prj-club75">
+            <div class="prj_desc">
+                <p class="animated prj_info">ECOMMERCE X MAGENTO</p>
+            </div>
+
+            <div class="prj_detail">
+                <a class="animated prj_info" href="http://www.club75.fr/" target="_blank">
+                    <span class="btn btn-more">See</span>
+                </a>
+            </div>
+        </div>
+        <div id="prj5" class="prj prj5 prj-renault">
+            <div class="prj_desc">
+                <p class="animated prj_info">MOBILE APP X ANDROID</p>
+            </div>
+
+            <div class="prj_detail">
+                <a class="animated prj_info" href="https://play.google.com/store/apps/details?id=com.sutunam.renault" target="_blank">
+                    <span class="btn btn-more">See</span>
+                </a>
+            </div>
+        </div>
+    </div><!--end .prj_wrapper-->
+    <div class="container-panel">
+        <div id="button-lion" class="btn-wrapper">
+            <button class="scroll-down">
+                <span class="wheel"></span>
+            </button>
+            <div class="txt-wrapper">
+                <p class="hide-on-mobile">SCROLL DOWN</p>
+                <p class="hide-on-desktop">ENTER</p>
+            </div>
+        </div>
+    </div>
+    <i id="slide-prev" class="slide slide-control slide-prev">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" xml:space="preserve">
+            <g><path class="arrow" fill="none" stroke="#F5F5F5" stroke-width="25" stroke-linejoin="round" stroke-miterlimit="10" d="M1035,724.2 C979.6,666.6,924.2,609,868.8,551.4C926.4,496.6,984,441.8,1041.6,387"/></g>
+            <path class="circle" fill="none" stroke="#F5F5F5" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M960,20.8c283,0,519.2,236.3,519.2,519.2S1243,1059.2,960,1059.2S440.8,823,440.8,540S677,20.8,960,20.8z"/>
+        </svg>
+    </i>
+    <i id="slide-next" class="slide slide-control slide-next">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 1080" enable-background="new 0 0 1920 1080" xml:space="preserve">
+            <g class="arrow-wrapper "><path class="arrow" fill="none" stroke="#F5F5F5" stroke-width="25" stroke-linejoin="round" stroke-miterlimit="10" d="M868.8,387 c57.6,54.8,115.2,109.7,172.8,164.5C986.2,609,930.8,666.6,875.4,724.2"/></g>
+            <path class="circle" fill="none" stroke="#F5F5F5" stroke-width="25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M960,20.8c283,0,519.2,236.3,519.2,519.2S1243,1059.2,960,1059.2S440.8,823,440.8,540S677,20.8,960,20.8z"/>
+        </svg>
+    </i>
+    <div id="nav" style="display: block;">
+        <div class="align a-left">
+            <div class="slogan" id="slogan">
+                <img src="images/home/slogan.svg" alt="" width="87" height="23">
+            </div>
+
+        </div>
+        <div class="align a-right">
+            <ul class="social-link">
+                <li id="about-href" class="about-href"><a href="about.html">ABOUT</a></li>
+                <li id="social-fb"><a href="https://www.facebook.com/Sutunam-449402315084665/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAAQYIEhYZOFVdX6W3vMXKzPcQm23kAAAAQ0lEQVQYV73MSRJAQBAF0aTNypT3P6wFghZhK1e/3qIAgGJSZ+46XzBqzbNFs5s1gypi04jhgsaj/g3t54/foEzpXDuV/ARLUbs1DwAAAABJRU5ErkJggg==" alt=""/></a></li>
+                <li id="social-tt"><a href="https://twitter.com/tanguysutunam" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAk1BMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ROyVeAAAAMHRSTlMAAQIEBQwRFBcZHiAoKisxODk6PEBCSlBcZ2t3eX+GiImPnaa8wMfMz9Xm9ff5+/2JXOQFAAAAbklEQVQYGY3B1xbBUABFwR1d9N6JFiG45/+/zi3Bm2WGHyKCKl5pp8eyPgKSFU4i6z4rw1bnBkTyekAsKZ2P5eRYk1QfF6yBvtY4C6O3Fk47U+GEFx0UPGsUhkaW6eLF/b2ca5OgMj3e8mzT4V8vadATTK4hMf0AAAAASUVORK5CYII=" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="mobile-notification" class="mobile-notification">
+        <span class="message">Browse the website on your desktop to enjoy the best experience !</span>
+        <button id="close-notification">OK</button>
+    </div>
+</div><!--end .home-->
+<script src="js/_bower.min.js"></script>
+<script src="js/script.min.js"></script>
+<script src="js/analytics.min.js"></script>
+</body>
+</html>

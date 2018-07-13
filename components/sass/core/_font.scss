@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "gotham-black";
+    src: url("../fonts/gotham-black.eot");
+    src: url("../fonts/gotham-black.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gotham-black.woff") format("woff"),
+    url("../fonts/gotham-black.ttf") format("truetype"),
+    url("../fonts/gotham-black.svg") format("svg");
+}
+@font-face {
+    font-family: "gotham-light";
+    src: url("../fonts/gothamlight.eot");
+    src: url("../fonts/gothamlight.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gothamlight.woff") format("woff"),
+    url("../fonts/gothamlight.ttf") format("truetype"),
+    url("../fonts/gothamlight.svg") format("svg");
+}
+@font-face {
+    font-family: "gotham-medium";
+    src: url("../fonts/gotham-medium.eot");
+    src: url("../fonts/gotham-medium.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gotham-medium.woff") format("woff"),
+    url("../fonts/gotham-medium.ttf") format("truetype"),
+    url("../fonts/gotham-medium.svg") format("svg");
+}
+@font-face {
+    font-family: "gotham-book";
+    src: url("../fonts/gotham-book.eot");
+    src: url("../fonts/gotham-book.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gotham-book.woff") format("woff"),
+    url("../fonts/gotham-book.ttf") format("truetype"),
+    url("../fonts/gotham-book.svg") format("svg");
+}
+@font-face {
+    font-family: "gotham-bold";
+    src: url("../fonts/gotham-bold.eot");
+    src: url("../fonts/gotham-bold.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gotham-bold.woff") format("woff"),
+    url("../fonts/gotham-bold.ttf") format("truetype"),
+    url("../fonts/gotham-bold.svg") format("svg");
+}
+@font-face {
+    font-family: "gotham-xlight";
+    src: url("../fonts/gotham-xlight.eot");
+    src: url("../fonts/gotham-xlight.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gotham-xlight.woff") format("woff"),
+    url("../fonts/gotham-xlight.ttf") format("truetype"),
+    url("../fonts/gotham-xlight.svg") format("svg");
+}
+@font-face {
+    font-family: "gotham-exlight";
+    src: url("../fonts/gothamexlight.eot");
+    src: url("../fonts/gothamexlight.eot#iefix") format("embedded-opentype"),
+    url("../fonts/gothamexlight.woff") format("woff"),
+    url("../fonts/gothamexlight.ttf") format("truetype"),
+    url("../fonts/gothamexlight.svg") format("svg");
+}
+.font-style {
+    font-style: normal;
+    font-weight: normal;
+}
+.font-gotham-black {
+    @extend .font-style;
+    font-family: "gotham-black",sans-serif, serif;
+}
+.font-gotham-bold {
+    @extend .font-style;
+    font-family: "gotham-bold", sans-serif, serif;
+}
+.font-gotham-medium {
+    @extend .font-style;
+    font-family: "gotham-medium", sans-serif ,serif;
+}
+.font-gotham-book {
+    @extend .font-style;
+    font-family: "gotham-book", sans-serif, serif;
+}
+.font-gotham-light {
+    @extend .font-style;
+    font-family: "gotham-light", sans-serif, serif;
+}
+.font-gotham-xlight {
+    @extend .font-style;
+    font-family: "gotham-xlight", sans-serif, serif;
+}
+.font-gotham-exlight {
+    @extend .font-style;
+    font-family: "gotham-exlight", sans-serif, serif;
+}

@@ -1,0 +1,198 @@
+// the project detail area
+.prj_wrapper {
+    position: fixed;
+    visibility: hidden;
+    .prj {
+        position: fixed;
+        top: 50%;
+        left: 15%;
+        opacity: 0;
+        .prj_detail {
+            transform: translateY(25%);
+        }
+        .prj_desc {
+            transform: translateY(25%);
+        }
+        &.prj-cresus {
+            z-index: 1;
+            .prj_desc {
+                p {
+                    color: #aa804e;
+                    &:after {
+                        background: #aa804e;
+                    }
+                }
+            }
+            .prj_detail {
+                .btn-more {
+                    border-color: rgba(105, 96, 117, .3);
+                    &:hover {
+                        color: #221f26;
+                    }
+                }
+            }
+        }
+        &.prj-durance {
+            .prj_desc {
+                p {
+                    color: #f6c709;
+                    &:after {
+                        background: #f6c709;
+                    }
+                }
+            }
+            .prj_detail {
+                .btn-more {
+                    border-color: rgba(255, 176, 202, .3);
+                    &:hover {
+                        color: #ee5285;
+                    }
+                }
+            }
+        }
+        &.prj-bys {
+            .prj_desc {
+                p {
+                    color: #282a3f;
+                    &:after {
+                        background: #282a3f;
+                    }
+                }
+            }
+            .prj_detail {
+                .btn-more {
+                    border-color: rgba(224, 151, 255, .3);
+                    &:hover {
+                        color: #ad3cdc;
+                    }
+                }
+            }
+        }
+        &.prj-club75 {
+            .prj_desc {
+                p {
+                    color: #d1ff00;
+                    &:after {
+                        background: #d1ff00;
+                    }
+                }
+            }
+            .prj_detail {
+                .btn-more {
+                    border-color: rgba(49, 203, 209, .3);
+                    &:hover {
+                        color: #168185;
+                    }
+                }
+            }
+        }
+        &.prj-renault {
+            .prj_desc {
+                p {
+                    color: #f64847;
+                    &:after {
+                        background: #f64847;
+                    }
+                }
+            }
+            .prj_detail {
+                .btn-more {
+                    border-color: rgba(253, 117, 115, .3);
+                    &:hover {
+                        color: #ae0b09;
+                    }
+                }
+            }
+        }
+        .prj_desc {
+            padding-left: 30px;
+            margin-top: 0;
+            font-size: $size-p-s;
+            text-transform: uppercase;
+            p {
+                padding-bottom: 10px;
+                color: #514032;
+                position: relative;
+                font-family: 'gotham-medium';
+                font-size: 12px;
+                letter-spacing: 0.2em;
+                @include bp(max-width, $screen-xxs-max) {
+                    font-size: 11px;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    width: 205px;
+                    height: 1px;
+                    background: #514032;
+                }
+            }
+        }
+        .prj_detail {
+            overflow: hidden;
+            margin: 35px 0 0 25px;
+            text-transform: uppercase;
+            a {
+                color: #fff;
+            }
+            .btn-more {
+                position: relative;
+                letter-spacing: 0.1em;
+                font-family: 'gotham-medium';
+                display: inline-block;
+                text-transform: uppercase;
+                border: 1px solid #696576;
+                font-size: $size-p-xxs;
+                padding: 11px 42px;
+                transition: color 0.1s ease;
+                will-change: color;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -1;
+                    background: #fff;
+                    transform: translateY(103%) translateZ(0);
+                    will-change: transform;
+                    transition: transform 0.1s ease;
+                }
+                &:hover {
+                    &:before {
+                        transform: translateY(0%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include bp(max-width, $screen-xs-max) {
+    .prj_wrapper {
+        .prj {
+            .prj_desc {
+                padding-left: 0;
+            }
+            .prj_detail {
+                margin: 0 auto;
+                width: 70px;
+                .btn-more {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+//a special style for the iphone 5 in landscape mode
+@media (max-width: 570px) and (orientation: landscape) {
+    .prj_wrapper {
+        .prj {
+            top: 9%;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.container-overlay {
+    .overlay-lion {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 45%;
+        height: 550px;
+        background: url(../images/home/overlay.png) no-repeat;
+        background-position: 50%;
+        background-size: 120%;
+        opacity: 0;
+    }
+}

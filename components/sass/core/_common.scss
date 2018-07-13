@@ -1,0 +1,37 @@
+* {
+    font-family: 'gotham-exlight', arial, helvetica, sans-serif;
+    box-sizing: border-box;
+    font-weight: 100;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+}
+a,a:hover {
+    text-decoration: none;
+}
+.align {
+    display: inline-block;
+}
+.a-left {
+    float: left;
+}
+.a-right {
+    float: right;
+}
+.button, button {
+    cursor: pointer;
+}
+.hide-on-desktop {
+    display: none;
+}
+@media (max-width: 1199px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .hide-on-desktop {
+        display: block;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+}

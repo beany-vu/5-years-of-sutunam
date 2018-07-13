@@ -1,0 +1,29 @@
+{
+  "name": "sutu5",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Beany Vu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "sutu5",
+    "svg",
+    "animation"
+  ],
+  "homepage": "https://github.com/beany-vu/sutu5",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "raphael": "^2.2.1",
+    "jquery": "^1",
+    "gsap": "^1.19.0",
+    "jquery-touch-events": "^1.0.5"
+  }
+}
